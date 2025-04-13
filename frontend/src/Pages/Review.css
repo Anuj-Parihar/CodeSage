@@ -1,0 +1,150 @@
+/* * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+  
+  main {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  main .left,
+  main .right {
+    height: 100%;
+    flex-basis: 50%;
+    border-radius: 0.7rem;
+  }
+  
+  main .left {
+    background-color: #000000;
+    position: relative;
+    color: rgb(219, 219, 255);;
+  }
+  
+  .left .code,
+  .code pre,
+  .code pre code {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0.7rem;
+    background-color: #0c0c0c;
+  }
+  
+  main .left .review {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(219, 219, 255);
+    color: #000000;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.7rem;
+  }
+  
+  
+  main .right {
+    background-color: #343434;
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+    overflow: auto;
+    color: rgb(219, 219, 255);
+  } */
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    font-family: 'Fira Code', monospace;
+    background-color: #121212;
+    color: #ddd;
+  }
+  
+  .review-main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .left-section, .right-section {
+    flex: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-section {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .code-editor {
+    flex: 1;
+    background-color: #0d0d0d;
+    border-radius: 8px;
+    overflow: auto;
+  }
+  
+  .review-button {
+    margin-top: 1rem;
+    background-color: #06bee1;
+    color: #000;
+    padding: 0.6rem 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-button:hover {
+    background-color: #03a9d4;
+  }
+  
+  .right-section {
+    background-color: #282c34;
+    padding: 1rem 1.5rem;
+    overflow-y: auto;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  
+  .section-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #06bee1;
+  }
+  
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .review-main {
+      flex-direction: column;
+    }
+  }
+  
